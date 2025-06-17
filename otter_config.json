@@ -1,0 +1,14 @@
+{
+    "tests": [],
+    "grade_from_log": true,
+    "generate_pdf": false,
+    "pdf": {
+        "filter": false,
+        "pagebreaks": false
+    },
+    "export_cell": "# otter.Notebook().export('eda_modelado_regresion.ipynb')",
+    "ignore_modules": [],
+    "ignore_patterns": [],
+    "seed": 42,
+    "variables": {}
+}
