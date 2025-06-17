@@ -22,7 +22,7 @@ jobs:
         run: pip install otter-grader
 
       - name: Ejecutar calificación automática
-        run: otter grade EDA_Regresion_Lineal_Logistica.ipynb
+        run: otter grade ml1_regresion EDA_Regresion_Lineal_Logistica.ipynb
 
       - name: Mostrar archivos de calificación
         run: ls -R otter-grader
