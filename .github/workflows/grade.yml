@@ -22,7 +22,7 @@ jobs:
         run: pip install otter-grader
 
       - name: Ejecutar calificación automática
-        run: otter grade
+        run: otter grade --assignment ml1_regresion
 
       - name: Mostrar archivos de calificación
         run: ls -R otter-grader
