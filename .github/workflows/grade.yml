@@ -19,10 +19,13 @@ jobs:
           python-version: '3.10'
 
       - name: Instalar Otter-Grader
-        run: pip install otter-grader
+        run: pip install otter-grader zip
+
+      - name: Empaquetar autograder
+        run: zip -r autograder.zip otter_config.json tests
 
       - name: Ejecutar calificación automática
-        run: otter grade -n ml1_regresion EDA_Regresion_Lineal_Logistica.ipynb
+        run: otter grade autograder.zip EDA_Regresion_Lineal_Logistica.ipynb
 
       - name: Mostrar archivos de calificación
         run: ls -R otter-grader
